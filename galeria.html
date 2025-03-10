@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rayo Espinosa CF | Galeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="..\IMG\escudoconfondo.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+body {
+    background-color: #e6ffe6;
+    color: #004d00;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    background-color: #004d00;
+}
+.navbar-brand, .nav-link {
+    color: white;
+}
+.navbar-light .navbar-brand, .navbar-light .nav-link {
+    color: white !important;
+}
+.container {
+    max-width: 90%; /* Modificado aquí */
+    margin: auto;
+    padding: 30px;
+}
+
+.imagen-pequena {
+    width: 100%; /* Asegura que todas las imágenes sean del mismo ancho */
+    height: auto; /* Asegura que todas las imágenes mantengan su aspecto */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto */
+    margin: 1.5%;
+}
+.imagenes-pequenas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bloque-imagen {
+    text-align: center; /* Centra la imagen y el texto */
+    width: 100%; /* Asegura que solo 2 imágenes estén en una fila */
+    float: left; /* Coloca las imágenes de dos en dos */
+}
+.video-pequeno {
+    width: 50%; /* Asegura que todos los videos sean del mismo ancho */
+    height: auto; /* Asegura que todos los videos mantengan su aspecto */
+    object-fit: cover; /* Asegura que los videos mantengan su aspecto */
+    margin: 1.5%;
+}
+.bloque-video {
+    text-align: center; /* Centra el video y el texto */
+    width: 100%; /* Asegura que solo 2 videos estén en una fila */
+    float: left; /* Coloca los videos de dos en dos */
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Rayo Espinosa C.F</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="nuestrahistoria.html">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="plantilla.html">Plantilla</a></li>
+				<li class="nav-item"><a class="nav-link" href="estadio.html">Estadio</a></li>
+				<!--<li class="nav-item"><a class="nav-link" href="equipotecnico.html">Equipo Técnico</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+				<li class="nav-item"><a class="nav-link" href="socios.html">Socios</a></li>
+				<li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+				<li class="nav-item"><a class="nav-link" href="goleadores.html">Máximos Goleadores</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-4 text-center">Galeria de fotos y vídeos</h1></br>
+        <center><img src="..\IMG\todos.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+        <p><i>Celebración de la primera victoria en nuestro debut en el torneo. 3-1 Vs Baides. (2023)</i></p></center>
+        <div class="imagenes-pequenas">
+            <div class="bloque-imagen">
+                <img src="..\IMG\vsbaides1.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Primera jornada Vs Baides. (2023)</i></p>
+            </div>
+            <div class="bloque-imagen">
+                <img src="..\IMG\vspinilla1.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Segunda jornada Vs Pinilla. (2023)</i></p>
+            </div>
+            <div class="bloque-imagen">
+                <img src="..\IMG\vsmedio1.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Tercera jornada Vs Medio. (2023)</i></p>
+            </div>
+            <div class="bloque-imagen">
+                <img src="..\IMG\vspinilla2.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Cuarta jordana Vs Pinilla. (2023)</i></p>
+            </div>
+			<div class="bloque-imagen">
+                <img src="..\IMG\vsmedio2.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Quinta jornada Vs Medio. (2023)</i></p>
+            </div>
+            <div class="bloque-imagen">
+                <img src="..\IMG\vsbaides2.jpg" alt="Descripción de la imagen" class="imagen-pequena">
+                <p><i>Sexta jornada Vs Baides. (2023)</i></p>
+            </div>
+			<div class="bloque-video">
+                <video width="320" height="240" controls="controls" class="video-pequeno"> <source src="..\IMG\goltori.mp4" type="video/mp4"/>
+               
+            </div>
+            <div class="bloque-video">
+                <video width="320" height="240" controls="controls" class="video-pequeno"> <source src="..\IMG\jugadagol.mp4" type="video/mp4"/>
+                
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
