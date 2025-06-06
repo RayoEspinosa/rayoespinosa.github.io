@@ -32,24 +32,17 @@ footer {
 }
 .sponsor-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-between;
+    gap: 2px;
     margin-bottom: 20px;
     background-color: white;
-    padding: 0;
-}
-.sponsor-row a {
-    visibility: hidden;
-}
-.sponsor-row a.visible {
-    visibility: visible;
+    padding: 0px 0;
 }
 .sponsor-row img {
-    width: 90px;
-    height: 60px;
+    width: 90px; /* Establece el ancho de la imagen */
+    height: 60px; /* Establece la altura de la imagen */
     border: 1px solid #004d00; 
-    object-fit: contain;
 }
 .social-icons {
     display: flex;
@@ -61,9 +54,9 @@ footer {
     margin: 0px;
 }
 .image-box {
-    width: 100%;
-    height: 500px;
-    overflow-y: scroll;
+    width: 100%; /* Ajusta el ancho de la caja según tus necesidades */
+    height: 500px; /* Ajusta la altura de la caja según tus necesidades */
+    overflow-y: scroll; /* Habilita el desplazamiento vertical */
 }
 @media screen and (max-width: 600px) {
   body {
@@ -79,19 +72,18 @@ footer {
     font-size: 18px;
   }
   .sponsor-row img {
-    width: 45px;
-    height: 30px;
+    width: 45px; /* Reduce el ancho de la imagen */
+    height: 30px; /* Reduce la altura de la imagen */
   }
   .club-logo {
-    width: 85px;
+    width: 85px; /* Reduce el tamaño del escudo del club */
   }
   .social-icons img {
     width: 15px;
   }
   .navbar-collapse {
-    display: block !important;
+    display: block !important; /* Asegura que los enlaces de navegación se muestren en dispositivos móviles */
   }
-}
 </style>
 </head>
 <body>
@@ -110,6 +102,7 @@ footer {
 				<li class="nav-item"><a class="nav-link" href="socios.html">Socios</a></li>
 				<li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
 				<li class="nav-item"><a class="nav-link" href="goleadores.html">Máximos Goleadores</a></li>
+				<li class="nav-item"><a class="nav-link" href="comunicados.html">Comunicados</a></li>
             </ul>
         </div>
     </nav>
@@ -120,17 +113,17 @@ footer {
     <img src="..\IMG\escudoconfondo.png" alt="Escudo del Club" style="width: 170px;">
 </div></br>
 <div class="sponsor-row">
-    <a href="https://www.facebook.com/CerrajeriaTalleresPlaza/" target="_blank"><img src="..\IMG\talleresplaza.jpg" alt="Patrocinador 1"></a>
-    <a href="https://www.paginasamarillas.es/f/carrascosa-de-henares/autoservicio-davila-ii_225332428_000000001.html" target="_blank"><img src="..\IMG\davila.jpg" alt="Patrocinador 2"></a>
-    <a href="https://espagreen.com/" target="_blank"><img src="..\IMG\espagreen.jpg" alt="Patrocinador 3"></a>
-    <a href="https://www.dieselogasolina.com/Buscador/Ficha/12117" target="_blank"><img src="..\IMG\repsol.jpeg" alt="Patrocinador 4"></a>
-    <a href="https://www.facebook.com/ladehesadeespinosa/?locale=es_ES" target="_blank"><img src="..\IMG\dehesa.jpg" alt="Patrocinador 5"></a>
-    <a href="https://www.controlignifugo.es/" target="_blank" class="visible"><img src="..\IMG\cisa.jpg" alt="Patrocinador 6"></a>
-    <a href="https://www.facebook.com/p/Bar-Restaurante-La-Toledana-100069940052741/" target="_blank"><img src="..\IMG\toledana.jpg" alt="Patrocinador 7"></a>
-    <a href="https://www.instagram.com/piscina.espinosa?igsh=ZGw3dHltaWJwdWlv" target="_blank"><img src="..\IMG\piscina.png" alt="Patrocinador 8"></a>
-    <a href="https://www.facebook.com/anaispeluqueriaespinosa/?locale=es_LA" target="_blank"><img src="..\IMG\peluqueria.png" alt="Patrocinador 9"></a>
-    <a href="https://www.instagram.com/rubenlone_?igsh=MWtsMHFub2k5cmZibw==" target="_blank"><img src="..\IMG\rubenlone.png" alt="Patrocinador 10"></a>
-    <a href="https://www.paginasamarillas.es/f/cogolludo/carniceria-jose-maria-de-frias-castells_000942235_000000001.html" target="_blank"><img src="..\IMG\carniceria.png" alt="Patrocinador 11"></a>
+    <a href="https://www.facebook.com/CerrajeriaTalleresPlaza/" target="_blank" style="display: none;"><img src="..\IMG\talleresplaza.jpg" alt="Patrocinador 1"></a>
+    <a href="https://www.paginasamarillas.es/f/carrascosa-de-henares/autoservicio-davila-ii_225332428_000000001.html" target="_blank" style="display: none;"><img src="..\IMG\davila.jpg" alt="Patrocinador 2"></a>
+    <a href="https://espagreen.com/" target="_blank" style="display: none;"><img src="..\IMG\espagreen.jpg" alt="Patrocinador 3"></a>
+    <a href="https://www.dieselogasolina.com/Buscador/Ficha/12117" target="_blank" style="display: none;"><img src="..\IMG\repsol.jpeg" alt="Patrocinador 4"></a>
+    <a href="https://www.facebook.com/ladehesadeespinosa/?locale=es_ES" target="_blank" style="display: none;"><img src="..\IMG\dehesa.jpg" alt="Patrocinador 5"></a>
+    <a href="https://www.controlignifugo.es/" target="_blank"><img src="..\IMG\cisa.jpg" alt="Patrocinador 6"></a>
+    <a href="https://www.facebook.com/p/Bar-Restaurante-La-Toledana-100069940052741/" target="_blank" style="display: none;"><img src="..\IMG\toledana.jpg" alt="Patrocinador 7"></a>
+    <a href="https://www.instagram.com/piscina.espinosa?igsh=ZGw3dHltaWJwdWlv" target="_blank" style="display: none;"><img src="..\IMG\piscina.png" alt="Patrocinador 8"></a>
+    <a href="https://www.facebook.com/anaispeluqueriaespinosa/?locale=es_LA" target="_blank" style="display: none;"><img src="..\IMG\peluqueria.png" alt="Patrocinador 9"></a>
+    <a href="https://www.instagram.com/rubenlone_?igsh=MWtsMHFub2k5cmZibw==" target="_blank" style="display: none;"><img src="..\IMG\rubenlone.png" alt="Patrocinador 10"></a>
+    <a href="https://www.paginasamarillas.es/f/cogolludo/carniceria-jose-maria-de-frias-castells_000942235_000000001.html" target="_blank" style="display: none;"><img src="..\IMG\carniceria.png" alt="Patrocinador 11"></a>
 </div>
 
 		<img src="..\IMG\socios025.png" alt="socios2024" style="display: block; margin-left: auto; margin-right: auto; width: 67%;">
@@ -147,5 +140,3 @@ footer {
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-</html>
