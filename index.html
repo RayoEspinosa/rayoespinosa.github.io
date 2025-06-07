@@ -1,93 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rayo Espinosa CF | Web oficial del Rayo Espinosa CF</title>
-	<link rel="shortcut icon" href="..\IMG\escudoconfondo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<title>Rayo Espinosa CF | Estadio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="..\IMG\escudoconfondo.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <style>
 body {
-    background-color: white;
+    background-color: #e6ffe6;
+    color: #004d00;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
     color: #004d00;
 }
 .navbar {
     background-color: #004d00;
 }
 .navbar-brand, .nav-link {
+    color: white;
+}
+.navbar-light .navbar-brand, .navbar-light .nav-link {
     color: white !important;
 }
-.jumbotron {
-    background-color: #e6ffe6;
-    color: #004d00;
+.container {
+    max-width: 90%; /* Modificado aquí */
+    margin: auto;
+    padding: 30px;
 }
-footer {
-    background-color: #004d00;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
-.sponsor-row {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
-    justify-content: space-between;
-    gap: 2px;
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 0px 0;
-}
-.sponsor-row img {
-    width: 90px; /* Establece el ancho de la imagen */
-    height: 60px; /* Establece la altura de la imagen */
-    border: 1px solid #004d00; 
-}
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-}
-.social-icons img {
-    width: 30px;
-    margin: 0px;
-}
-.image-box {
-    width: 100%; /* Ajusta el ancho de la caja según tus necesidades */
-    height: 500px; /* Ajusta la altura de la caja según tus necesidades */
-    overflow-y: scroll; /* Habilita el desplazamiento vertical */
-}
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-  .navbar-brand, .nav-link {
-    font-size: 18px;
-  }
-  .display-4 {
-    font-size: 30px;
-  }
-  .lead {
-    font-size: 18px;
-  }
-  .sponsor-row img {
-    width: 45px; /* Reduce el ancho de la imagen */
-    height: 30px; /* Reduce la altura de la imagen */
-  }
-  .club-logo {
-    width: 85px; /* Reduce el tamaño del escudo del club */
-  }
-  .social-icons img {
-    width: 15px;
-  }
-  .navbar-collapse {
-    display: block !important; /* Asegura que los enlaces de navegación se muestren en dispositivos móviles */
-  }
+.center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%; /* Puedes ajustar este valor para cambiar el tamaño de la imagen */
+		margin-top: 1px; /* Ajusta este valor para cambiar el margen superior */
+        margin-bottom: 9px; /* Ajusta este valor para cambiar el margen inferior */
+    }
+
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Rayo Espinosa C.F</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -106,37 +66,41 @@ footer {
             </ul>
         </div>
     </nav>
-    <div class="jumbotron">
-<h1 class="display-4">¡Bienvenido a la página oficial del Rayo Espinosa!</h1>
-<p class="lead">Aquí encontrarás toda la información sobre nuestro equipo de fútbol.</p>
-<div style="text-align: center;">
-    <img src="..\IMG\escudoconfondo.png" alt="Escudo del Club" style="width: 170px;">
-</div></br>
-<div class="sponsor-row">
-            <a href="https://www.facebook.com/CerrajeriaTalleresPlaza/" target="_blank" style="display: none;"><img src="..\IMG\talleresplaza.jpg" alt="Patrocinador 1"></a>
-            <a href="https://www.paginasamarillas.es/f/carrascosa-de-henares/autoservicio-davila-ii_225332428_000000001.html" target="_blank" style="display: none;"><img src="..\IMG\davila.jpg" alt="Patrocinador 2"></a>
-			<a href="https://espagreen.com/" target="_blank" style="display: none;"><img src="..\IMG\espagreen.jpg" alt="Patrocinador 3"></a>
-            <a href="https://www.dieselogasolina.com/Buscador/Ficha/12117" target="_blank""><img src="..\IMG\repsol.jpeg" alt="Patrocinador 4"></a>
-            <a href="https://www.facebook.com/ladehesadeespinosa/?locale=es_ES" target="_blank" style="display: none;"><img src="..\IMG\dehesa.jpg" alt="Patrocinador 5"></a>
-            <a href="https://www.controlignifugo.es/" target="_blank"><img src="..\IMG\cisa.jpg" alt="Patrocinador 6"></a>
-			<a href="https://www.facebook.com/p/Bar-Restaurante-La-Toledana-100069940052741/" target="_blank" style="display: none;"><img src="..\IMG\toledana.jpg" alt="Patrocinador 7"></a>
-            <a href="https://www.instagram.com/piscina.espinosa?igsh=ZGw3dHltaWJwdWlv" target="_blank" style="display: none;"><img src="..\IMG\piscina.png" alt="Patrocinador 8"></a>
-			<a href="https://www.facebook.com/anaispeluqueriaespinosa/?locale=es_LA" target="_blank" style="display: none;"><img src="..\IMG\peluqueria.png" alt="Patrocinador 9"></a>
-            <a href="https://www.instagram.com/rubenlone_?igsh=MWtsMHFub2k5cmZibw==" target="_blank"><img src="..\IMG\rubenlone.png" alt="Patrocinador 10"></a>
-			<a href="https://www.paginasamarillas.es/f/cogolludo/carniceria-jose-maria-de-frias-castells_000942235_000000001.html" target="_blank" style="display: none;"><img src="..\IMG\carniceria.png" alt="Patrocinador 11"></a>
-			
-       </div>
-		<img src="..\IMG\socios025.png" alt="socios2024" style="display: block; margin-left: auto; margin-right: auto; width: 67%;">
-    </div>
-    <footer>
-	<div class="social-icons">
-            <a href="https://www.facebook.com/share/PUGYeJFDLPA2tbAQ/?mibextid=LQQJ4d" target="_blank"><img src="..\IMG\facelogo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/rayoespinosac.f?igsh=aG1tbHFkMHYxZG9z&utm_source=qr" target="_blank"><img src="..\IMG\instalogo.png" alt="Instagram"></a>
+
+    <div class="container">
+    <h1 class="display-4 text-center">Comunicado Oficial: Sin comunicados que mostrar.</h1><br>
+
+    <img src="..\IMG\escudoconfondo.png" style="float: left; width: 300px; margin-right: 20px; margin-bottom: 20px;" alt="Escudo Rayo Espinosa"/>
+
+    <!--<p></p>
+
+    <p></p>
+
+    <p></p>-->
+
+    <!-- Aquí empieza el texto que debe ocupar todo el ancho (debajo de la imagen) -->
+    <div style="clear: both;"></div>
+	
+	<!--<p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+    <p></p>-->
+</div>
         </div>
-        © 2025 Rayo Espinosa C.F
-    </footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
